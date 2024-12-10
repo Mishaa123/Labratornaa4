@@ -1,0 +1,156 @@
+\hypertarget{classe__d}{}\doxysection{Класс e\+\_\+d}
+\label{classe__d}\index{e\_d@{e\_d}}
+
+
+Шифрование методом табличной маршрутной перестановкой  
+
+
+
+
+{\ttfamily \#include $<$e\+\_\+d.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe__d_ac556b0608d6031a24423240d911f8deb}{e\+\_\+d}} (vector$<$ char $>$ key)
+\begin{DoxyCompactList}\small\item\em Конструктор для установки ключа \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classe__d_a1da8251f25ef757d8acb99a70fc14e3c}\label{classe__d_a1da8251f25ef757d8acb99a70fc14e3c}} 
+{\bfseries e\+\_\+d} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрет на использование конструктора по умолчанию \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classe__d_a9a87de2d7489f83ab178dcec6b009338}{encrypt}} (string stroka)
+\begin{DoxyCompactList}\small\item\em Зашифровывание \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classe__d_ae9d60bd0f604b15a9772e38538311da6}{decrypt}} (string stroka)
+\begin{DoxyCompactList}\small\item\em Расшифровывание \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classe__d_abad97cc152a02fef82f48ee5baa711a8}{get\+Valid\+Key}} (vector$<$ char $>$ \&key)
+\begin{DoxyCompactList}\small\item\em Валидация ключа \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classe__d_ab81d8650d8d5ec18fdc49ef9af6c9340}{get\+Valid\+Text}} (string \&stroka)
+\begin{DoxyCompactList}\small\item\em Валидация текста \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classe__d_aba0020844d99a0816ff8658711faa4a0}{get\+Valid\+\_\+num\+\_\+of\+\_\+columns}} (int key, string \&stroka)
+\begin{DoxyCompactList}\small\item\em Валидация ключа относительно текста \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classe__d_a032107f81e81b3b9cc8df95a781e9e30}\label{classe__d_a032107f81e81b3b9cc8df95a781e9e30}} 
+int {\bfseries num\+\_\+of\+\_\+columns}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом табличной маршрутной перестановкой 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt. \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка 
+\end{DoxyWarning}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classe__d_ac556b0608d6031a24423240d911f8deb}\label{classe__d_ac556b0608d6031a24423240d911f8deb}} 
+\index{e\_d@{e\_d}!e\_d@{e\_d}}
+\index{e\_d@{e\_d}!e\_d@{e\_d}}
+\doxysubsubsection{\texorpdfstring{e\_d()}{e\_d()}}
+{\footnotesize\ttfamily e\+\_\+d\+::e\+\_\+d (\begin{DoxyParamCaption}\item[{vector$<$ char $>$}]{key }\end{DoxyParamCaption})}
+
+
+
+Конструктор для установки ключа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Входной вектор символов, представляющий ключ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classe__d_ae9d60bd0f604b15a9772e38538311da6}\label{classe__d_ae9d60bd0f604b15a9772e38538311da6}} 
+\index{e\_d@{e\_d}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!e\_d@{e\_d}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string e\+\_\+d\+::decrypt (\begin{DoxyParamCaption}\item[{string}]{stroka }\end{DoxyParamCaption})}
+
+
+
+Расшифровывание 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em stroka} & Текст для расшифрования. Текст проходить валидацию текста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classe__d_a9a87de2d7489f83ab178dcec6b009338}\label{classe__d_a9a87de2d7489f83ab178dcec6b009338}} 
+\index{e\_d@{e\_d}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!e\_d@{e\_d}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily string e\+\_\+d\+::encrypt (\begin{DoxyParamCaption}\item[{string}]{stroka }\end{DoxyParamCaption})}
+
+
+
+Зашифровывание 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em stroka} & Текст для зашифрования. Текст проходить валидацию текста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classe__d_aba0020844d99a0816ff8658711faa4a0}\label{classe__d_aba0020844d99a0816ff8658711faa4a0}} 
+\index{e\_d@{e\_d}!getValid\_num\_of\_columns@{getValid\_num\_of\_columns}}
+\index{getValid\_num\_of\_columns@{getValid\_num\_of\_columns}!e\_d@{e\_d}}
+\doxysubsubsection{\texorpdfstring{getValid\_num\_of\_columns()}{getValid\_num\_of\_columns()}}
+{\footnotesize\ttfamily int e\+\_\+d\+::get\+Valid\+\_\+num\+\_\+of\+\_\+columns (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{string \&}]{stroka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Валидация ключа относительно текста 
+
+Если ключ меньше или равен длине строки, то значение ключа приравнивается к половине длины текста. Если длина текста во много раз больше, чем ключ, то значение ключа приравнивается к половине длины текста. 
+\begin{DoxyParams}{Аргументы}
+{\em key} & ключ \\
+\hline
+{\em stroka} & Входная строка, представляющая текст \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classe__d_abad97cc152a02fef82f48ee5baa711a8}\label{classe__d_abad97cc152a02fef82f48ee5baa711a8}} 
+\index{e\_d@{e\_d}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!e\_d@{e\_d}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily string e\+\_\+d\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{vector$<$ char $>$ \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Валидация ключа 
+
+Убирает из ключ всё кроме цифр. Если ключ оказался пустым произойдёт повторный ввод значения ключа. 
+\begin{DoxyParams}{Аргументы}
+{\em key} & Входной вектор символов, представляющий ключ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classe__d_ab81d8650d8d5ec18fdc49ef9af6c9340}\label{classe__d_ab81d8650d8d5ec18fdc49ef9af6c9340}} 
+\index{e\_d@{e\_d}!getValidText@{getValidText}}
+\index{getValidText@{getValidText}!e\_d@{e\_d}}
+\doxysubsubsection{\texorpdfstring{getValidText()}{getValidText()}}
+{\footnotesize\ttfamily string e\+\_\+d\+::get\+Valid\+Text (\begin{DoxyParamCaption}\item[{string \&}]{stroka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Валидация текста 
+
+Убирает из текста все недопустимые символы, которых нет в алфавите. 
+\begin{DoxyParams}{Аргументы}
+{\em stroka} & Входная строка, представляющая текст \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{e__d_8h}{e\+\_\+d.\+h}}\item 
+e\+\_\+d.\+cpp\end{DoxyCompactItemize}
